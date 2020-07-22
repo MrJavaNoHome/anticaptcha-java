@@ -1,4 +1,4 @@
-package main.java.com.anti_captcha.helper;
+package com.anti_captcha.helper;
 
 import org.json.JSONException;
 import org.json.JSONObject;

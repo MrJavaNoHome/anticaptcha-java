@@ -1,4 +1,4 @@
-package main.java.com.anti_captcha.helper;
+package com.anti_captcha.helper;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;

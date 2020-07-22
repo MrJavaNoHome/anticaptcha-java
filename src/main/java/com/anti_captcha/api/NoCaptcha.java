@@ -1,6 +1,6 @@
-package main.java.com.anti_captcha.api;
+package com.anti_captcha.api;
 
-import main.java.com.anti_captcha.helper.DebugHelper;
+import com.anti_captcha.helper.DebugHelper;
 
 import org.json.JSONException;
 import org.json.JSONObject;

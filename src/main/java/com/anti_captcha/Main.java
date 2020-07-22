@@ -1,15 +1,15 @@
-package main.java.com.anti_captcha;
+package com.anti_captcha;
 
-import main.java.com.anti_captcha.api.CustomCaptcha;
-import main.java.com.anti_captcha.api.FunCaptcha;
-import main.java.com.anti_captcha.api.GeeTestProxyless;
-import main.java.com.anti_captcha.api.HCaptchaProxyless;
-import main.java.com.anti_captcha.api.ImageToText;
-import main.java.com.anti_captcha.api.NoCaptcha;
-import main.java.com.anti_captcha.api.NoCaptchaProxyless;
-import main.java.com.anti_captcha.api.RecaptchaV3Proxyless;
-import main.java.com.anti_captcha.api.SquareCaptcha;
-import main.java.com.anti_captcha.helper.DebugHelper;
+import com.anti_captcha.api.CustomCaptcha;
+import com.anti_captcha.api.FunCaptcha;
+import com.anti_captcha.api.GeeTestProxyless;
+import com.anti_captcha.api.HCaptchaProxyless;
+import com.anti_captcha.api.ImageToText;
+import com.anti_captcha.api.NoCaptcha;
+import com.anti_captcha.api.NoCaptchaProxyless;
+import com.anti_captcha.api.RecaptchaV3Proxyless;
+import com.anti_captcha.api.SquareCaptcha;
+import com.anti_captcha.helper.DebugHelper;
 
 import org.json.JSONArray;
 import org.json.JSONException;

@@ -1,6 +1,6 @@
-package main.java.com.anti_captcha;
+package com.anti_captcha;
 
-import main.java.com.anti_captcha.api.response.TaskResultResponse;
+import com.anti_captcha.api.response.TaskResultResponse;
 
 import org.json.JSONObject;
 
