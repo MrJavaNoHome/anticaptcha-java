@@ -1,9 +1,9 @@
-package com.anti_captcha.Api;
+package main.java.com.anti_captcha.api;
 
-import com.anti_captcha.AnticaptchaBase;
-import com.anti_captcha.ApiResponse.TaskResultResponse;
-import com.anti_captcha.Helper.DebugHelper;
-import com.anti_captcha.IAnticaptchaTaskProtocol;
+import main.java.com.anti_captcha.AnticaptchaBase;
+import main.java.com.anti_captcha.api.response.TaskResultResponse;
+import main.java.com.anti_captcha.helper.DebugHelper;
+import main.java.com.anti_captcha.IAnticaptchaTaskProtocol;
 
 import org.json.JSONException;
 import org.json.JSONObject;

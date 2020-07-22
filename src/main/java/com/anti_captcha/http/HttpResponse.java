@@ -1,4 +1,4 @@
-package com.anti_captcha.Http;
+package main.java.com.anti_captcha.http;
 
 import org.apache.http.client.protocol.HttpClientContext;
 import org.apache.http.cookie.Cookie;

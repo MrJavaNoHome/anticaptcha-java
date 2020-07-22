@@ -1,13 +1,13 @@
-package com.anti_captcha;
+package main.java.com.anti_captcha;
 
-import com.anti_captcha.ApiResponse.BalanceResponse;
-import com.anti_captcha.ApiResponse.CreateTaskResponse;
-import com.anti_captcha.ApiResponse.TaskResultResponse;
-import com.anti_captcha.Helper.DebugHelper;
-import com.anti_captcha.Helper.HttpHelper;
-import com.anti_captcha.Helper.JsonHelper;
-import com.anti_captcha.Helper.StringHelper;
-import com.anti_captcha.Http.HttpRequest;
+import main.java.com.anti_captcha.api.response.BalanceResponse;
+import main.java.com.anti_captcha.api.response.CreateTaskResponse;
+import main.java.com.anti_captcha.api.response.TaskResultResponse;
+import main.java.com.anti_captcha.helper.DebugHelper;
+import main.java.com.anti_captcha.helper.HttpHelper;
+import main.java.com.anti_captcha.helper.JsonHelper;
+import main.java.com.anti_captcha.helper.StringHelper;
+import main.java.com.anti_captcha.http.HttpRequest;
 
 import org.json.JSONException;
 import org.json.JSONObject;

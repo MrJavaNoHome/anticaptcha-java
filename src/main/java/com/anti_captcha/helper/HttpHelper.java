@@ -1,7 +1,7 @@
-package com.anti_captcha.Helper;
+package main.java.com.anti_captcha.helper;
 
-import com.anti_captcha.Http.HttpRequest;
-import com.anti_captcha.Http.HttpResponse;
+import main.java.com.anti_captcha.http.HttpRequest;
+import main.java.com.anti_captcha.http.HttpResponse;
 
 import org.apache.http.HttpHost;
 import org.apache.http.client.HttpClient;

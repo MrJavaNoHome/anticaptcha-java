@@ -1,7 +1,7 @@
-package com.anti_captcha.ApiResponse;
+package main.java.com.anti_captcha.api.response;
 
-import com.anti_captcha.Helper.DebugHelper;
-import com.anti_captcha.Helper.JsonHelper;
+import main.java.com.anti_captcha.helper.DebugHelper;
+import main.java.com.anti_captcha.helper.JsonHelper;
 
 import org.json.JSONArray;
 import org.json.JSONException;
