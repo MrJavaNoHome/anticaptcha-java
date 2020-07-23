@@ -20,6 +20,9 @@ In pom.xml add:
     <version>1.0</version>
 </dependency>
 ```
+# Do you like it?
+
+Support me with registering from my referral to anti captcha service: http://getcaptchasolution.com/7nwwk2kvvc
 
 ---
 **Readme of forked project:**  
