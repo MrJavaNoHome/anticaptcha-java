@@ -1,3 +1,28 @@
+# Anticaptcha-java for anti-captcha.com 
+</br>This is fork of https://github.com/AdminAnticaptcha/anticaptcha-java which was converted to maven dependency.
+
+# How to use?
+In pom.xml add:  
+```xml
+<repositories>  
+    <repository>  
+        <id>repsy</id>  
+        <name>MrJavNoHome repository</name>  
+        <url>https://repo.repsy.io/mvn/honzik/public</url>  
+    </repository>  
+</repositories>  
+```
+
+```xml
+<dependency>
+    <groupId>com.anti_captcha</groupId>
+    <artifactId>anticaptcha-java</artifactId>
+    <version>1.0</version>
+</dependency>
+```
+
+---
+**Readme of forked project:**  
 Download the full project (2.5 mb): https://yadi.sk/d/6V8NfwDe3EQ7z4
 
 You need Java 1.8 installed.
