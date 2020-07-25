@@ -25,7 +25,7 @@ In pom.xml add:
 </dependency>
 ```
 ## Examples
-[Click here to see more examples](/src/com/anti_captcha/Main.java)
+[Click here to see more examples](/src/main/java/com/anti_captcha/Main.java)
 
 * Image to text
 ```java
