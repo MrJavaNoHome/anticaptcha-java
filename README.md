@@ -1,7 +1,11 @@
 # Anticaptcha-java for anti-captcha.com 
-</br>This is fork of https://github.com/AdminAnticaptcha/anticaptcha-java which was converted to maven dependency.
+This is fork of https://github.com/AdminAnticaptcha/anticaptcha-java which was converted to maven dependency.  
+To obtain client key click here: http://getcaptchasolution.com/7nwwk2kvvc
 
-# How to use?
+## Requirements
+Java 1.8
+
+## Installation
 In pom.xml add:  
 ```xml
 <repositories>  
@@ -20,26 +24,57 @@ In pom.xml add:
     <version>1.0</version>
 </dependency>
 ```
-# Do you like it?
+## Examples
+[Click here to see more examples](/src/com/anti_captcha/Main.java)
 
+* Image to text
+```java
+DebugHelper.setVerboseMode(true);
+ImageToText api = new ImageToText();
+api.setClientKey("1234567890123456789012");
+api.setFilePath("captcha.jpg");
+if (!api.createTask()) {
+ DebugHelper.out("API v2 send failed. " + api.getErrorMessage(), Type.ERROR);
+} else if (!api.waitForResult()) {
+ DebugHelper.out("Could not solve the captcha.", Type.ERROR);
+} else {
+ DebugHelper.out("Result: " + api.getTaskSolution().getText(), Type.SUCCESS);
+}
+```
+
+
+* Recaptcha V2
+```java
+DebugHelper.setVerboseMode(true);
+NoCaptchaProxyless api = new NoCaptchaProxyless();
+api.setClientKey("1234567890123456789012");
+api.setWebsiteUrl(new URL("http://http.myjino.ru/recaptcha/test-get.php"));
+api.setWebsiteKey("6Lc_aCMTAAAAABx7u2W0WPXnVbI_v6ZdbM6rYf16");
+if (!api.createTask()) {
+ DebugHelper.out("API v2 send failed. " + api.getErrorMessage(), Type.ERROR);
+} else if (!api.waitForResult()) {
+ DebugHelper.out("Could not solve the captcha.", Type.ERROR);
+} else {
+ DebugHelper.out("Result: " + api.getTaskSolution().getGRecaptchaResponse(), Type.SUCCESS);
+}
+```
+
+* Recaptcha V3
+```java
+DebugHelper.setVerboseMode(true);
+RecaptchaV3Proxyless api = new RecaptchaV3Proxyless();
+api.setClientKey("1234567890123456789012");
+api.setWebsiteUrl(new URL("http://www.supremenewyork.com"));
+api.setWebsiteKey("6Leva6oUAAAAAMFYqdLAI8kJ5tw7BtkHYpK10RcD");
+api.setPageAction("testPageAction");
+if (!api.createTask()) {
+ DebugHelper.out("API v2 send failed. " + api.getErrorMessage(), DebugHelper.Type.ERROR);
+} else if (!api.waitForResult()) {
+ DebugHelper.out("Could not solve the captcha.", DebugHelper.Type.ERROR);
+} else {
+ DebugHelper.out("Result: " + api.getTaskSolution().getGRecaptchaResponse(), DebugHelper.Type.SUCCESS);
+}
+```
+
+## Do you like it?
 Support me with registering from my referral to anti captcha service: http://getcaptchasolution.com/7nwwk2kvvc
-
----
-**Readme of forked project:**  
-Download the full project (2.5 mb): https://yadi.sk/d/6V8NfwDe3EQ7z4
-
-You need Java 1.8 installed.
-This is an IntelliJ IDEA project and it should be compatible with Eclipse (but not tested).
-
-If you want to compile the project in console (tested on MacOS 10.11):
-
-1. Make sure you are using Java 1.8:
-$ javac -version
-if you installed Java 1.8 before, but previous command gives you "1.7", you need to switch it to 1.8:
-$ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-
-2. Compile:
-$ javac -cp "libs/*" src/com/anti_captcha/AnticaptchaBase.java src/com/anti_captcha/Main.java src/com/anti_captcha/IAnticaptchaTaskProtocol.java src/com/anti_captcha/Api/ImageToText.java src/com/anti_captcha/Api/NoCaptcha.java src/com/anti_captcha/Api/NoCaptchaProxyless.java src/com/anti_captcha/ApiResponse/BalanceResponse.java src/com/anti_captcha/ApiResponse/CreateTaskResponse.java src/com/anti_captcha/ApiResponse/TaskResultResponse.java src/com/anti_captcha/Helper/DebugHelper.java src/com/anti_captcha/Helper/HttpHelper.java src/com/anti_captcha/Helper/JsonHelper.java src/com/anti_captcha/Helper/StringHelper.java src/com/anti_captcha/Http/HttpRequest.java src/com/anti_captcha/Http/HttpResponse.java
-
-3. Run:
-$ java -cp "src:libs/*" com.anti_captcha.Main
